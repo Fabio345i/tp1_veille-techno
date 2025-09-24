@@ -155,7 +155,7 @@
             défectueux ou bien que nous n'avons pas su le configurer
             correctement.
             <br />
-            Notre <strong>deuxième hypothèse</strong> était qu'il y a vait
+            Notre <strong>deuxième hypothèse</strong> était qu'il y avait
             peut-être des courant d'air frais qui faisaient en sorte que le
             capteur ne donnait pas les bonnes mesures de température.
           </p>
@@ -216,6 +216,129 @@
             <br />
             Nous avons donc conclu que le capteur était défectueux ou bien que
             nous n'avons pas su le configurer correctement.
+          </p>
+        </div>
+      </section>
+
+	  <!-- Section -->
+      <section>
+        <header>
+          <h2>Avis</h2>
+        </header>
+        <div class="content">
+          <h3>Longévité</h3>
+          <p>
+            L'Arduino Uno R3 est une carte robuste qui peut fonctionner longtemps sans problème, 
+			tant qu'elle est utilisée dans un
+            environnement relativement protégé (intérieur, alimentation stable).
+            En revanche, le capteur KY-028 présente une durée de vie plus
+            limitée. Comme il s'agit d'un module bas de gamme, il est plus
+            sensible à l'usure (faux contacts, oxydation des broches,
+            vieillissement de la thermistance).
+          </p>
+
+          <h3>Stabilité</h3>
+          <p>
+            Lors de nos expérimentations, nous avons constaté un manque de
+            stabilité dans les mesures du KY-028. Les valeurs obtenues étaient
+            parfois incohérentes et peu reproductibles, ce qui diminue la
+            confiance dans les résultats. La carte Arduino, quant à elle, est
+            stable et fiable dans l'exécution des programmes. Le problème vient
+            donc surtout du capteur, qui n'offre pas la régularité nécessaire
+            pour un usage concret.
+          </p>
+
+          <h3>Efficacité</h3>
+          <p>
+            Dans le contexte proposé (détection et ajustement de la température
+            ambiante pour favoriser le sommeil), l'efficacité du dispositif est
+            limitée par la précision du KY-028. Bien qu'il détecte bien les
+            variations de température (par exemple dans la main ou près d'une
+            source de chaleur), il ne permet pas de fournir une valeur absolue
+            fiable. Il est utile pour des démonstrations ou projets éducatifs, 
+			à condition d'être capable de le faire fonctionner correctement.
+          </p>
+
+          <h3>Maintenabilité</h3>
+          <p>
+            La maintenabilité de la solution est bonne côté Arduino : toutes les
+            pièces (cartes, câbles, modules) sont faciles à remplacer et
+            largement disponibles. Le capteur KY-028 est lui aussi remplaçable à
+            bas coût, mais son manque de fiabilité oblige presque à prévoir son
+            remplacement régulier. Le support logiciel via l'IDE Arduino
+            facilite la reprogrammation et l'adaptation du code.
+          </p>
+
+          <h3>Robustesse à la manipulation</h3>
+          <p>
+            L'Arduino Uno R3 est très robuste et peut encaisser de multiples
+            branchements et débranchements sans problème. En revanche, le KY-028
+            est fragile : ses broches peuvent se tordre facilement, et il est
+            sensible aux interférences électriques ou aux mauvais branchements.
+            Pour un projet étudiant, c'est acceptable, mais dans un usage
+            quotidien, cela pose une limite.
+          </p>
+
+          <h3>Justification du potentiel de la technologie</h3>
+          <p>
+            Le potentiel de cette technologie est réel dans un contexte éducatif
+            et de prototypage. L'Arduino Uno est pertinent pour explorer
+            l'acquisition de données et l'automatisation simple. Cependant, le
+            KY-028 limite fortement ce potentiel à cause de son manque de
+            précision et de stabilité. Pour aller plus loin, il faudrait remplacer ce
+            capteur par un modèle numérique plus précis. L'intégration avec
+            d'autres modules Arduino (Wi-Fi, Bluetooth, relais pour
+            chauffage/climatisation) permettrait d'élargir l'application et de
+            pallier ses faiblesses.
+          </p>
+
+          <h3>
+            Avantages et inconvénients comparativement à d'autres technologies
+            similaires
+          </h3>
+          <ul>
+            <li>
+              <strong>Avantages :</strong>
+              <ul>
+                <li>
+                  <em>Arduino Uno R3:</em> facile à utiliser, grande communauté,
+                  documentation abondante, coût abordable.
+                </li>
+                <li>
+                  <em>KY-028 :</em> prix très bas, simplicité d'intégration,
+                  permet de détecter des variations de température.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Inconvénients :</strong>
+              <ul>
+                <li>
+                  <em>Arduino Uno R3:</em> puissance limitée (pas adapté aux
+                  projets complexes ou intensifs en calcul).
+                </li>
+                <li>
+                  <em>KY-028 :</em> précision faible, stabilité limitée, fragilité matérielle.
+                </li>
+                <li>
+                  Comparé à des capteurs comme le DS18B20 ou le DHT22, le KY-028
+                  est nettement moins fiable.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Avis final</h3>
+          <p>
+            L'association Arduino Uno R3 + KY-028 a un potentiel éducatif
+            intéressant pour apprendre à manipuler des capteurs et observer des
+            variations de température. Toutefois, pour l'usage concret proposé
+            (optimiser la température ambiante pour le sommeil), la solution
+            n'est pas pertinente à cause du manque de précision et de stabilité
+            du capteur. Mon avis est donc que l'Arduino Uno R3 reste une excellente
+            base de développement, mais qu'il faut absolument remplacer le
+            KY-028 par un capteur plus fiable si l'on veut en faire une solution
+            réellement utilisable. 
           </p>
         </div>
       </section>
